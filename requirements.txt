@@ -1,0 +1,23 @@
+# ============================================================
+# AutoStream Conversational AI Agent — Dependencies
+# ============================================================
+# All packages operate within free-tier limits.
+# Install: pip install -r requirements.txt
+
+# ----- Core Agent Framework -----
+langgraph>=0.2.28
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-google-genai>=2.0.0
+
+# ----- Vector Store (local, no server required) -----
+faiss-cpu>=1.7.4
+
+# ----- Embeddings (local, no API key required) -----
+sentence-transformers>=3.0.0
+
+# ----- Utilities -----
+rich>=13.7.0            # Beautiful terminal UI
+pydantic>=2.0.0         # Structured output schemas
+python-dotenv>=1.0.0    # .env file loading
+numpy>=1.24.0           # Required by FAISS + sentence-transformers
